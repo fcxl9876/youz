@@ -1,0 +1,14 @@
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-city">{{userInfo.city}}</text>
+  </view>
+</view>
+
+  <button class="a" hover-class="none"><image src='../../images/book.png' class="aa"></image><w:br/><view class="font">学习时间</view></button>
+  <button class="b" hover-class="none"><image src='../../images/tongji.png' class="bb"></image><w:br/><view class="font">自习排行</view></button>
+  <button class="c" hover-class="none"><image src='../../images/search.png' class="bb"></image><w:br/><view class="font">提问角</view></button>
+  <button class="d" hover-class="none"><image src='../../images/shop.png' class="bb"></image><w:br/><view class="font">商 城</view></button>
+  <button class="e" hover-class="none"><image src='../../images/favor.png' class="bb"></image><w:br/><view class="font">自习足迹</view></button>
+  <button class="f" hover-class="none"></button>

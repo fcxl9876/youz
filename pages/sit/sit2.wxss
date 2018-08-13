@@ -1,0 +1,13 @@
+.a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50rpx 0;
+  position: relative;
+  height: 400rpx;
+  background-color: #009a70;
+  color: #FFFFFF;
+}
+.b{
+  position: relative;
+}

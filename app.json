@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/sit/sit1",
+    "pages/sit/sit2",
+    "pages/sit/sit3",
+    "pages/sit/left",
+    "pages/index/schools/school1/school1",
+    "pages/index/state/state1",
+    "pages/index/state/state2",
+    "pages/index/state/state3",
+    "pages/index/state/state4",
+    "pages/index/state/state5",
+    "pages/report/report"
+  ],
+  "window": {
+      "navigationBarBackgroundColor": "#FFFFFF",
+      "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#009a70",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "bottom",
+    "list": [
+      {
+        "iconPath": "images/sit.png",
+        "selectedIconPath": "images/sit-select.png",
+        "pagePath": "pages/sit/sit2",
+        "text": "我的座位"
+      },
+      {
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-select.png",
+        "pagePath": "pages/index/index",
+        "text": "开始找座"
+      },
+      {
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-select.png",
+        "pagePath": "pages/my/my",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

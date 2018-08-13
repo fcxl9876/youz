@@ -1,0 +1,6 @@
+.a{
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx 0;
+  align-items: center;
+}

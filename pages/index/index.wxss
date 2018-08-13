@@ -1,0 +1,63 @@
+.modal-box{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  background:rgba(0,0,0,0.4);
+  overflow: hidden;
+  }
+
+.modal-body{
+  position:relative;
+  }
+
+.modal-content{
+  /* width: 60%; */
+  margin:0 10% 0 30%;
+  overflow: hidden;
+  border-radius: 10rpx;}
+
+.modal-content{
+  width: 60%;
+  height:150px; 
+}
+.modal-content .fenxiang{
+  width: 100%;
+  height: 40%;
+}
+
+.page_bd{  
+    padding: 10px;  
+    background-color: snow;  
+}  
+.body_head{  
+    border: 1px solid;  
+    border-color: beige;  
+    padding: 10px;  
+}  
+.display_show{  
+    display: block;  
+    border: 1px solid;      
+    border-color: beige;  
+    padding: 10px;  
+}  
+.display_none{  
+    display: none;  
+}  
+
+.container{
+  position: relative;
+  width: 100%; 
+  height: 100vh; 
+}
+
+#Map{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

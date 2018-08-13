@@ -1,0 +1,10 @@
+<view><modal hidden="{{hidden}}" title="结束使用" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+    确定要结束使用吗？
+</modal></view>
+
+<view class="a">
+  暂无使用中的座位
+</view>
+<view class="b">
+  <button bindtap='modalTap'>去找座</button>
+</view>

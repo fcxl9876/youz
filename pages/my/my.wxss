@@ -1,0 +1,115 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx 0;
+  align-items: center;
+  background: #009a70;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #333;
+}
+button::after{
+  border: none;
+}
+.font{
+  font-size: 15px;
+  color: #009a70;
+  position: relative;
+  top: 25px;
+  left: 2rpx;
+}
+.a{
+  position: relative;
+  left: -34%;
+  width: 34%;
+  height: 128px;
+}
+.aa{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 33%;
+  top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b{
+  position: relative;
+  top: -128px;
+  width: 34%;
+  height: 128px;
+}
+.bb{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 33%;
+  top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c{
+  position: relative;
+  top: -256px;
+  left: 34%;
+  width: 34%;
+  height: 128px;
+}
+.cc{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 33%;
+  top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.d{
+  position: relative;
+  top: -256px;
+  left: -34%;
+  width: 34%;
+  height: 128px;
+}
+.dd{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 33%;
+  top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.e{
+  position: relative;
+  top: -384px;
+  width: 34%;
+  height: 128px;
+}
+.ee{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 33%;
+  top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.f{
+  position: relative;
+  top: -512px;
+  left: 34%;
+  width: 34%;
+  height: 128px;
+}

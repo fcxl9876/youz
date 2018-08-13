@@ -1,0 +1,41 @@
+.head{
+  display: flex;
+  flex-direction: column;
+  padding: 50rpx 0;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.tt{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 20rpx;
+}
+.ttt{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 20rpx;
+  color: grey;
+}
+.a1{
+  position: relative;
+  height: 60rpx;
+}
+.a2{
+  position: relative;
+  height: 600rpx;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.a{
+  background-color: green;
+}
+.b{
+  background-color: red;
+}
+.c{
+  background-color: yellow;
+}
+.aa,.bb,.cc{
+  width: 20px;
+  height: 20px;
+}

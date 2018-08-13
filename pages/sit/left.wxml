@@ -1,0 +1,16 @@
+<view class="section">
+  <view class="section__title">请选择离开时间</view>
+  <picker bindchange="change" value="{{selectedIndex}}" range="{{list}}">
+    <view class="picker">
+      当前选择：{{list[selectedIndex]}}
+    </view>
+  </picker>
+</view>
+
+<view><modal hidden="{{hidden}}" title="确认离开" confirm-text="确定" bindconfirm="confirm" bindcancel="cancel" no-cancel="{{nocancel}}">
+    我们将为您保留座位
+</modal></view>
+
+<view>
+  <button disabled='{{disabled}}' bindtap='modalTap'>确定</button>
+</view>

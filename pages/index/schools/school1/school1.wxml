@@ -1,0 +1,26 @@
+<view><modal hidden="{{hidden}}" title="使用须知" confirm-text="同意" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+    自习座位资源为公共财产，本程序仅为帮助同学们更好的获得座位，减少占座现象所带来的冲突，因此使用本程序即认为您已同意并保证愿意遵守相关规则，即出现占座行为时将可能被解除座位使用状态，将座位供给给当时需要座位的同学。请放心，程序会通知占座的同学座位取消并预留取物时间，保证私人物品得到保护。
+</modal></view>
+
+<view class="head">
+  <view class="tt">中国地质大学（北京）</view>
+  <view class="ttt"><w:br/>科研楼一楼大厅</view>
+</view>
+
+<view class="a1">
+  <image class="aa" src="../../../../images/sit-green.png"></image> 空闲  
+  <image class="bb" src="../../../../images/sit-red.png"></image> 使用中  
+  <image class="cc" src="../../../../images/sit-yellow.png"></image> 暂时离开  
+</view>
+
+<view class="a2">
+<view>
+  <image class="aa" src="../../../../images/sit-green.png" bindtap="gotostate1"></image>
+</view>
+<view>
+  <image class="bb" src="../../../../images/sit-red.png" bindtap="gotostate2"></image>
+</view>
+<view>
+  <image class="cc" src="../../../../images/sit-yellow.png" bindtap="gotostate3"></image>
+</view>
+</view>

@@ -1,0 +1,8 @@
+.picker{
+  border:solid 1px #ddd;
+  background-color: #fafafa;
+  padding:10px;
+}
+.section{
+  padding: 10px;
+}
