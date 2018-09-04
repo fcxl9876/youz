@@ -13,26 +13,19 @@ Page({
         Sno: "test1",
         Stype: "",
         Slevel: "",
-        Sstate: "",
-        like_num: 999,
-        favor_img: "../../image/favor.png",
-        show: false
+        Sstate: ""
       },
       {
         Sno: "test2",
         Stype: "",
         Slevel: "",
-        Sstate: "",
-        like_num: 999,
-        show: false
+        Sstate: ""
       },
       {
         Sno: "test3",
         Stype: "",
         Slevel: "",
-        Sstate: "",
-        like_num: 999,
-        show: false
+        Sstate: ""
       },
     ],
 

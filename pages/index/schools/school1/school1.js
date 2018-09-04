@@ -5,7 +5,28 @@ Page({
   data: {
     hidden: false,
     nocancel: false,
-    open: false
+    open: false,
+
+    item_list: [ // 数据库连接测试数组
+      {
+        Sno: "test1",
+        Stype: "",
+        Slevel: "",
+        Sstate: ""
+      },
+      {
+        Sno: "test2",
+        Stype: "",
+        Slevel: "",
+        Sstate: ""
+      },
+      {
+        Sno: "test3",
+        Stype: "",
+        Slevel: "",
+        Sstate: ""
+      },
+    ],
   },
   
   cancel: function () {
@@ -25,9 +46,9 @@ Page({
     })
   },
 
-  gotostate1:function(){
+  gotosit1:function(){
     wx.navigateTo({
-      url: '../../state/state1',
+      url: 'sit/sit1',
     })
   },
 
@@ -47,7 +68,28 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
+    var that = this;
+
+    wx.request({ //网络请求测试函数
+      url: 'https://www.cugbyouz.cn/test.php',//此处填写你后台请求地址
+      method: 'GET',
+      header: { 'Content-Type': 'application/json' },
+      data: {},
+      success: function (res) {
+        // success
+        console.log(res.data);//打印请求返回的结果
+        that.setData({
+          item_list: res.data
+        })
+      },
+      fail: function (res) {
+        // fail
+      },
+      complete: function (res) {
+        // complete
+      }
+    })
   },
 
   /**

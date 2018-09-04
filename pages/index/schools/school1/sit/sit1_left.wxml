@@ -1,0 +1,24 @@
+<!--pages/index/schools/school1/sit/sit1_left.wxml-->
+<view class="tt"><view class="t1"><image class="img" src="/images/chair.png"></image></view></view>
+
+<view class="show">
+  科研楼一楼大厅1号座位
+</view><w:br/>
+<view class="aa">
+  中国地质大学（北京）
+</view>
+<view class="show">
+  星级：五星级
+</view>
+<view class="show">
+  学霸座
+</view>
+<view class="show">
+  有事离开：XX分钟
+</view>
+<view>
+  <button disabled='true'>座位无人?马上反馈</button>
+</view>
+<view>
+  <button disabled='true'>马上使用</button>
+</view>

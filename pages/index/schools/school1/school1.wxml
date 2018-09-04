@@ -15,7 +15,7 @@
 
 <view class="a2">
 <view>
-  <image class="aa" src="../../../../images/sit-green.png" bindtap="gotostate1"></image>
+  <image class="aa" src="../../../../images/sit-green.png" bindtap="gotosit1"></image>
 </view>
 <view>
   <image class="bb" src="../../../../images/sit-red.png" bindtap="gotostate2"></image>
