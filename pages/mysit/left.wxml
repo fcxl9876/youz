@@ -12,5 +12,5 @@
 </modal></view>
 
 <view>
-  <button disabled='{{disabled}}' bindtap='modalTap'>确定</button>
+  <button class="btn" disabled='{{disabled}}' bindtap='modalTap'>确定</button>
 </view>

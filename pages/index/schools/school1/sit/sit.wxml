@@ -5,23 +5,21 @@
 <view class="tt"><view class="t1"><image class="img" src="/images/chair.png"></image></view></view>
 
 <view class="show">
-  科研楼一楼大厅2号座位
-</view><w:br/>
+  科研楼一楼大厅{{ sitno }}号座位
+</view>
+<w:br/>
 <view class="aa">
-中国地质大学（北京）
-</view>
-<view class="show">
-  星级：四星级
-</view>
-<view class="show">
-  男神座
+  中国地质大学（北京）
 </view>
 <view class="show">
   空闲中
 </view>
 <view>
-  <button disabled='true'>座位无人?马上反馈</button>
+  <button class="btn" disabled='true'>座位无人?马上反馈</button>
 </view>
-<view>
-  <button bindtap='modalTap'>马上使用</button>
+<view wx:if="{{ use==false }}">
+  <button class="btn" bindtap='modalTap'>马上使用</button>
+</view>
+<view wx:if="{{ use==true }}">
+  <button class="btn" disabled='true'>马上使用</button>
 </view>

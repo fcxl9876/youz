@@ -1,26 +1,42 @@
-// pages/index/schools/school1/sit/sit1.js
+// pages/index/schools/school1/sit/sit1_left.js
+var app = getApp()
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    hidden: true,
-    nocancel: true,
+    sitno: null,
+    time: null,
+    lefttime: null,
   },
 
-  cancel: function () {
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
     this.setData({
-      hidden: true
-    });
-  },
-
-  modalTap: function (e) {
-    this.setData({
-      hidden: false
+      sitno: app.globalData.sitno,
     })
+    var that = this;
     wx.request({
-      url: 'https://www.cugbyouz.cn/page1.php',
+      url: 'https://www.cugbyouz.cn/gettime.php',
+      header: {
+        //传输接收数据的头（！！！）
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      data: {
+        x: app.globalData.sitno,
+      },
       success: function (res) {
+        that.setData({
+          result: res.data
+        });
+        app.globalData.time = that.data.result[0].left;
+        app.globalData.lefttime = that.data.result[0].lefttime;
+        that.setData({
+          time: app.globalData.time,
+          lefttime: app.globalData.lefttime,
+        })
       },
       fail: function (res) {
         // fail
@@ -29,23 +45,6 @@ Page({
         // complete
       }
     })
-  },
-
-  confirm: function () {
-    this.setData({
-      hidden: true
-    })
-    //跳转到我的座位界面
-    wx.navigateTo({
-      url: '../../../../my sit/sit1',
-    })
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
   },
 
   /**

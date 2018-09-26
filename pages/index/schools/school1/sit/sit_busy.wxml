@@ -1,0 +1,23 @@
+<!--pages/index/schools/school1/sit/sit1_busy.wxml-->
+<view>
+  <modal hidden="{{hidden}}" title="温馨提示" confirm-text="确定" bindconfirm="confirm" cancel-text="取消" bindcancel="cancel" no-cancel="{{nocancel}}">这是一个正常使用的座位，友座发现此时好像还有空座位，如需要座位建议您选择空座位登记使用。如果您确实需要使用该座位且发现该座位无人，您可进行反馈。确认要进行反馈吗？</modal>
+</view>
+
+<view class="tt"><view class="t1"><image class="img" src="/images/chair.png"></image></view></view>
+
+<view class="show">
+  科研楼一楼大厅{{ sitno }}号座位
+</view>
+<w:br/>
+<view class="aa">
+  中国地质大学（北京）
+</view>
+<view class="show">
+  正常使用中
+</view>
+<view bind:submit="message" report-submit="true">
+  <button class="btn" open-type="contact" form-type="submit">座位无人?马上反馈</button>
+</view>
+<view>
+  <button class="btn" disabled='true'>马上使用</button>
+</view>

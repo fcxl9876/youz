@@ -1,0 +1,64 @@
+<view><modal hidden="{{hidden1}}" title="结束使用" confirm-text="确定" cancel-text="取消" bindcancel="cancel1" bindconfirm="confirm1" no-cancel="{{nocancel1}}">
+    确定要结束使用吗？
+</modal></view>
+
+<view><modal hidden="{{hidden2}}" title="感谢使用" confirm-text="确定" bindconfirm="confirm2" no-cancel="{{nocancel2}}">
+    感谢您的使用
+</modal></view>
+
+<view><modal hidden="{{hidden3}}" title="确认离开" confirm-text="确定" cancel-text="取消" bindcancel="cancel2" bindconfirm="confirm3" no-cancel="{{nocancel3}}">
+    您确定要离开吗，请选择您要离开的时间
+</modal></view>
+
+<view class="tt"><view class="t1"><image class="img" src="/images/chair.png"></image></view></view>
+
+<view class="a" wx:if="{{ sitno!=0 && sitno!=null }}">
+  科研楼一楼大厅{{ sitno }}号座位
+</view>
+<view class="a" wx:else >
+  暂无使用中的座位
+</view>
+<w:br/>
+<view class="aa" wx:if="{{ schoolno==1 }}">
+  中国地质大学（北京）
+</view>
+<view class="aa" wx:else >
+  请点击开始找座
+</view>
+<view class="b" wx:if="{{ sitno!=0 && sitno!=null }}" >
+  座位状态：
+</view>
+<view class="b" wx:else >
+</view>
+<view class="c" wx:if="{{ sitno!=0 && sitstate == 1 }}" >
+  正常使用中
+</view>
+<view class="cc" wx:elif="{{ sitno!=0 && sitstate == 2 }}" >
+  暂时离开
+  <view class="d">
+  离开时间：{{time}}
+  </view>
+  <view class="e">
+  将要离开约{{lefttime}}分钟
+  </view>
+</view>
+<view class="c" wx:else >
+</view>
+<view  wx:if="{{ sitno!=0 && sitstate == 1 }}">
+  <button class="btn" bindtap="modalTap1">有事离开</button>
+</view>
+<view  wx:elif="{{ sitno!=0 && sitstate == 2 }}">
+  <button class="btn" bindtap="modalTap3">我回来了</button>
+</view>
+<view wx:else >
+</view>
+<view  wx:if="{{ sitno!=0 && (sitstate == 1 || sitstate==2) }}">
+  <button class="btn" bindtap="modalTap2">结束使用</button>
+</view>
+<view wx:else >
+</view>
+<view  wx:if="{{ sitno!=0 && sitstate == 1 }}">
+  <button class="btn" disabled='true'>与ta聊天</button>
+</view>
+<view wx:else >
+</view>

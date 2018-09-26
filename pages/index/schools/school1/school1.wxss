@@ -2,40 +2,56 @@
   display: flex;
   flex-direction: column;
   padding: 50rpx 0;
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: rgba(191,191,191,0.055)
 }
 .tt{
   display: flex;
   flex-direction: column;
   position: relative;
-  left: 20rpx;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 .ttt{
   display: flex;
   flex-direction: column;
   position: relative;
-  left: 20rpx;
+  font-size: 16px;
+  text-align: center;
   color: grey;
 }
 .a1{
   position: relative;
-  height: 60rpx;
+  height: 100rpx;
+  font-size: 15px;
+  left: 17%;
+  top: 20rpx;
 }
 .a2{
   position: relative;
   height: 600rpx;
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: rgba(191,191,191,0.055)
 }
-.a{
-  background-color: green;
-}
-.b{
-  background-color: red;
-}
-.c{
-  background-color: yellow;
-}
-.aa,.bb,.cc{
+.s{
+  position: relative;
   width: 20px;
   height: 20px;
+}
+.sitl1{
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+}
+.sitr1{
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-90deg);
+  left: 55px;
+}
+.table1{
+  position: fixed;
+  width: 25px;
+  height: 45px;
+  left: 25px;
 }

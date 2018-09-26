@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    
   },
 
   /**
@@ -27,8 +27,26 @@ Page({
         icon: 'success',
         duration: 2000,
       })
-      wx.navigateTo({
-        url: '../index/state/state3',
+      wx.request({
+        url: 'https://www.cugbyouz.cn/sit_left.php',
+        header: {
+          //传输接收数据的头（！！！）
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        data: {
+          x: app.globalData.sitno
+        },
+        success: function (res) {
+        },
+        fail: function (res) {
+          // fail
+        },
+        complete: function (res) {
+          // complete
+        }
+      })
+      wx.reLaunch({
+        url: '../index/index',
       })
     }, 5000);
   },

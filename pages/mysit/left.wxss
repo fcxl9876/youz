@@ -6,3 +6,15 @@
 .section{
   padding: 10px;
 }
+
+.btn {
+  width: 80%;
+  margin-top: 10rpx;
+  background-color: #009a70;
+  color: white;
+  border-radius: 98rpx; 
+}
+.btn::after {
+  border-radius: 98rpx;
+  border: 0;
+}

@@ -1,8 +1,8 @@
+<view class="main">
 <view class="container">
   <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    <text class="userinfo-city">{{userInfo.city}}</text>
+    <open-data type="userAvatarUrl" background-size="cover"></open-data>
+    <open-data type="userNickName"></open-data>
   </view>
 </view>
 
@@ -12,3 +12,5 @@
   <button class="d" hover-class="none"><image src='../../images/shop.png' class="bb"></image><w:br/><view class="font">商 城</view></button>
   <button class="e" hover-class="none"><image src='../../images/favor.png' class="bb"></image><w:br/><view class="font">自习足迹</view></button>
   <button class="f" hover-class="none"></button>
+
+</view>

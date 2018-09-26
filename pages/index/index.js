@@ -8,27 +8,6 @@ Page({
     latitude: 0, // 给个默认值
     longitude: 0, // 给个默认值
 
-    item_list: [ // 数据库连接测试数组
-      {
-        Sno: "test1",
-        Stype: "",
-        Slevel: "",
-        Sstate: ""
-      },
-      {
-        Sno: "test2",
-        Stype: "",
-        Slevel: "",
-        Sstate: ""
-      },
-      {
-        Sno: "test3",
-        Stype: "",
-        Slevel: "",
-        Sstate: ""
-      },
-    ],
-
     markers: [ //地图数组
     {
       iconPath: '/images/map.png',
@@ -37,8 +16,14 @@ Page({
       longitude: 116.350096,
       width: 50,
       height: 50
-    }]
+    }],
 
+    item_list: [ // 数据库连接测试数组
+      {
+        Sno: "test1",
+        Sstate: ""
+      },
+    ]
   },
 
   markertap(e) {
@@ -94,7 +79,7 @@ Page({
       success: function (res) {
         // success
         console.log(res.data);//打印请求返回的结果
-        that.setData ({
+        that.setData({
           item_list: res.data
         })
       },
@@ -105,6 +90,8 @@ Page({
         // complete
       }
     })
+
+    app.globalData.schoolno = null;
   },
 
   bindcontroltap: function (e) {

@@ -8,19 +8,28 @@
 </view>
 
 <view class="a1">
-  <image class="aa" src="../../../../images/sit-green.png"></image> 空闲  
-  <image class="bb" src="../../../../images/sit-red.png"></image> 使用中  
-  <image class="cc" src="../../../../images/sit-yellow.png"></image> 暂时离开  
+  <image class="s" src="../../../../images/sit-green.png"></image> 空闲 
+  <image class="s" src="../../../../images/sit-red.png"></image> 使用中 
+  <image class="s" src="../../../../images/sit-yellow.png"></image> 暂时离开 
 </view>
 
 <view class="a2">
 <view>
-  <image class="aa" src="../../../../images/sit-green.png" bindtap="gotosit1"></image>
+  <image class="sitl1" src="{{ colorsit1 }}" bindtap="gotosit1"></image>
+  <image class="table1" src="../../../../images/table.jpg"></image>
+  <image class="sitr1" src="{{ colorsit5 }}" bindtap="gotosit5"></image>
 </view>
 <view>
-  <image class="bb" src="../../../../images/sit-red.png" bindtap="gotostate2"></image>
+  <image class="sitl1" src="{{ colorsit2 }}" bindtap="gotosit2"></image>
+  <image class="sitr1" src="{{ colorsit6 }}" bindtap="gotosit6"></image>
 </view>
 <view>
-  <image class="cc" src="../../../../images/sit-yellow.png" bindtap="gotostate3"></image>
+  <image class="sitl1" src="{{ colorsit3 }}" bindtap="gotosit3"></image>
+  <image class="table1" src="../../../../images/table.jpg"></image>
+  <image class="sitr1" src="{{ colorsit7 }}" bindtap="gotosit7"></image>
+</view>
+<view>
+  <image class="sitl1" src="{{ colorsit4 }}" bindtap="gotosit4"></image>
+  <image class="sitr1" src="{{ colorsit8 }}" bindtap="gotosit8"></image>
 </view>
 </view>

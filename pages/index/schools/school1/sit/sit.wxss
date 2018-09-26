@@ -1,4 +1,3 @@
-/* pages/index/schools/school1/sit/sit1_busy.wxss */
 .tt{
   height: 400rpx;
   background-color: rgba(128, 128, 128, 0.2);
@@ -29,5 +28,17 @@
   color: grey;
 }
 .e{
-  color: red;
+  color: #009a70;
+}
+
+.btn {
+  width: 80%;
+  margin-top: 10rpx;
+  background-color: #009a70;
+  color: white;
+  border-radius: 98rpx; 
+}
+.btn::after {
+  border-radius: 98rpx;
+  border: 0;
 }

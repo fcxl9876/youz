@@ -2,34 +2,28 @@
   "pages": [
     "pages/index/index",
     "pages/my/my",
-    "pages/mysit/sit1",
-    "pages/mysit/sit2",
-    "pages/mysit/sit3",
+    "pages/mysit/sit",
     "pages/mysit/left",
     "pages/index/schools/school1/school1",
-    "pages/index/state/state2",
-    "pages/index/state/state3",
-    "pages/index/state/state4",
-    "pages/index/state/state5",
-    "pages/report/report",
-    "pages/index/schools/school1/sit/sit1",
-    "pages/index/schools/school1/sit/sit1_busy",
-    "pages/index/schools/school1/sit/sit1_left"
+    "pages/index/schools/school1/sit/sit",
+    "pages/index/schools/school1/sit/sit_busy",
+    "pages/index/schools/school1/sit/sit_left",
+    "pages/report/report"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#000000",
-    "selectedColor": "#009a70",
+    "color": "#8a8a8a",
+    "selectedColor": "#2c2c2c",
     "backgroundColor": "#FFFFFF",
     "borderStyle": "bottom",
     "list": [
       {
-        "iconPath": "images/sit.png",
-        "selectedIconPath": "images/sit-select.png",
-        "pagePath": "pages/mysit/sit2",
+        "iconPath": "images/homesit.png",
+        "selectedIconPath": "images/homesit-select.png",
+        "pagePath": "pages/mysit/sit",
         "text": "我的座位"
       },
       {
