@@ -15,9 +15,6 @@
 <view class="show">
   正常使用中
 </view>
-<view bind:submit="message" report-submit="true">
-  <button class="btn" open-type="contact" form-type="submit">座位无人?马上反馈</button>
-</view>
 <view>
-  <button class="btn" disabled='true'>马上使用</button>
+  <button class="btn" open-type="contact">座位无人?马上反馈</button>
 </view>

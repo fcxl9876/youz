@@ -14,8 +14,5 @@
   将要离开约{{lefttime}}分钟
 </view>
 <view>
-  <button class="btn" open-type="contact" disabled='true'>座位无人?马上反馈</button>
-</view>
-<view>
-  <button class="btn" disabled='true'>马上使用</button>
+  <button class="btn" open-type="contact">还没回来?马上反馈</button>
 </view>

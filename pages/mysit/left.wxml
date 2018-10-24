@@ -7,10 +7,6 @@
   </picker>
 </view>
 
-<view><modal hidden="{{hidden}}" title="确认离开" confirm-text="确定" bindconfirm="confirm" bindcancel="cancel" no-cancel="{{nocancel}}">
-    我们将为您保留座位
-</modal></view>
-
 <view>
   <button class="btn" disabled='{{disabled}}' bindtap='modalTap'>确定</button>
 </view>

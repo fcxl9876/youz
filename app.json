@@ -8,7 +8,8 @@
     "pages/index/schools/school1/sit/sit",
     "pages/index/schools/school1/sit/sit_busy",
     "pages/index/schools/school1/sit/sit_left",
-    "pages/report/report"
+    "pages/report/report",
+    "pages/my/studytime"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",

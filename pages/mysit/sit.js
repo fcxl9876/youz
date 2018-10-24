@@ -15,7 +15,7 @@ Page({
     sitstate: null,
     time: null,
     lefttime: null,
-    // openid: null,
+    temp: 0,
 
     item_list: [ // 数据库连接测试数组
       {
@@ -50,9 +50,7 @@ Page({
         x: app.globalData.sitno
       },
       success: function (res) {
-        var page = getCurrentPages().pop();
-        if (page == undefined || page == null) return;
-        page.onLoad(); 
+        that.onLoad();
       },
       fail: function (res) {
         // fail
@@ -129,10 +127,6 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    // this.setData({
-    //   openid: app.globalData.openid,
-    // })
-    var openid = app.globalData.openid;
     wx.request({
       url: 'https://www.cugbyouz.cn/check.php',
       header: {
@@ -140,11 +134,58 @@ Page({
         'content-type': 'application/x-www-form-urlencoded'
       },
       data: {
-        x: that.openid,
+        x: app.globalData.openid,
       },
       success: function (res) {
         if (res.data != null) {
-          app.globalData.sitno = res.data
+          app.globalData.schoolno = 1;
+          app.globalData.sitno = res.data;
+          wx.request({
+            url: 'https://www.cugbyouz.cn/getleft.php',
+            header: {
+              //传输接收数据的头（！！！）
+              'content-type': 'application/x-www-form-urlencoded'
+            },
+            data: {
+              x: app.globalData.sitno,
+            },
+            success: function (res){
+              that.setData({
+                time: res.data
+              })
+            },
+            fail: function (res) {
+              // fail
+            },
+            complete: function (res) {
+              // complete
+            }
+          })
+          wx.request({
+            url: 'https://www.cugbyouz.cn/getlefttime.php',
+            header: {
+              //传输接收数据的头（！！！）
+              'content-type': 'application/x-www-form-urlencoded'
+            },
+            data: {
+              x: app.globalData.sitno,
+            },
+            success: function (res) {
+              that.setData({
+                lefttime: res.data
+              })
+            },
+            fail: function (res) {
+              // fail
+            },
+            complete: function (res) {
+              // complete
+            }
+          })
+        }
+        else if (res.data==null){
+          app.globalData.schoolno = null;
+          app.globalData.sitno = null;
         }
       },
       fail: function (res) {
@@ -159,6 +200,7 @@ Page({
       time: app.globalData.time,
       lefttime: app.globalData.lefttime, 
     })
+
     wx.request({ //网络请求测试函数
       url: 'https://www.cugbyouz.cn/test.php',//此处填写你后台请求地址
       method: 'GET',
@@ -226,14 +268,19 @@ Page({
         // complete
       }
     })
-
+    if (this.data.sitno==null){
+      this.setData({
+        schoolno: null,
+      })
+      app.globalData.schoolno=null;
+    }
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    this.onLoad();
   },
 
   /**
@@ -261,7 +308,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    
+
   },
 
   /**

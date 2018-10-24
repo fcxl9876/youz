@@ -45,6 +45,11 @@ Page({
         //跳转到我的座位界面
         wx.switchTab({
           url: '../../../../mysit/sit',
+          success: function (e) {
+            var page = getCurrentPages().pop();
+            if (page == undefined || page == null) return;
+            page.onShow();
+          } 
         })
       },
       fail: function (res) {
@@ -62,7 +67,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     this.setData({
-      sitno:app.globalData.sitno,
+      sitno: app.globalData.sitno,
     })
     wx.request({
       url: 'https://www.cugbyouz.cn/check.php',
@@ -71,10 +76,10 @@ Page({
         'content-type': 'application/x-www-form-urlencoded'
       },
       data: {
-        x: app.globalData.openid
+        x: app.globalData.openid,
       },
       success: function (res) {
-        if (res.data){
+        if (res.data!=null){
           that.setData({
             use: true,
           })

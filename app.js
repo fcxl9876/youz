@@ -28,8 +28,7 @@ App({
                },
                success: function (res) {
                  console.log(res.data);
-                 // wx.setStorageSync('openid', res.data.openid);
-                 that.globalData.openid = res.data.openid;
+                 that.globalData.openid = res.data.Uid;
                }
             })
            }

@@ -19,13 +19,19 @@ Page({
   },
 
   change: function (e){
+    var that = this;
     this.setData({
-      selectedIndex: e.detail.value,
-      disabled: false
+      selectedIndex: e.detail.value
     })
+    var index = this.data.selectedIndex;
+    if (index != 0) {
+      that.setData({
+        disabled: false,
+      })
+    }
   },
 
-  confirm: function (){
+  modalTap: function (){
     var index = this.data.selectedIndex;
     app.globalData.time = util.formatTime(new Date());
     if (index == 1) {
@@ -50,10 +56,10 @@ Page({
       success: function (res) {
         wx.switchTab({
           url: 'sit',
-          success: function(e){
+          success: function (e) {
             var page = getCurrentPages().pop();
             if (page == undefined || page == null) return;
-            page.onLoad(); 
+            page.onShow();
           }
         })
       },
@@ -63,18 +69,6 @@ Page({
       complete: function (res) {
         // complete
       }
-    })
-  },
-
-  cancel: function (){
-    this.setData({
-      hidden: true
-    })
-  },
-
-  modalTap: function (){
-    this.setData({
-      hidden: false
     })
   },
 

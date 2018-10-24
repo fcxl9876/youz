@@ -11,10 +11,10 @@
 	"libVersion": "1.9.90",
 	"appid": "wx435c78e09dbc3781",
 	"projectname": "youzbeta",
-	"svr": "",
-	"client": "",
-	"qcloudRoot": "",
-	"miniprogramRoot": "",
+	"svr": "/",
+	"client": "/",
+	"qcloudRoot": "/",
+	"miniprogramRoot": "/",
 	"condition": {
 		"search": {
 			"current": -1,

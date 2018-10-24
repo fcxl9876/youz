@@ -30,15 +30,15 @@ Page({
     wx.navigateTo({
       url: 'schools/school1/school1',
     })
+    app.globalData.schoolno = 1;
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
     var that = this;
-
+    app.globalData.schoolno = null,
     // 调用wx.getLocation系统API,获取并设置当前位置经纬度
     wx.getLocation({
       type: "gcj02", // 坐标系类型
@@ -71,6 +71,75 @@ Page({
       }
     });
 
+    wx.request({
+      url: 'https://www.cugbyouz.cn/check.php',
+      header: {
+        //传输接收数据的头（！！！）
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      data: {
+        x: app.globalData.openid,
+      },
+      success: function (res) {
+        if (res.data != null) {
+          app.globalData.schoolno = 1;
+          app.globalData.sitno = res.data;
+          wx.request({
+            url: 'https://www.cugbyouz.cn/getleft.php',
+            header: {
+              //传输接收数据的头（！！！）
+              'content-type': 'application/x-www-form-urlencoded'
+            },
+            data: {
+              x: app.globalData.sitno,
+            },
+            success: function (res) {
+              that.setData({
+                time: res.data
+              })
+            },
+            fail: function (res) {
+              // fail
+            },
+            complete: function (res) {
+              // complete
+            }
+          })
+          wx.request({
+            url: 'https://www.cugbyouz.cn/getlefttime.php',
+            header: {
+              //传输接收数据的头（！！！）
+              'content-type': 'application/x-www-form-urlencoded'
+            },
+            data: {
+              x: app.globalData.sitno,
+            },
+            success: function (res) {
+              that.setData({
+                lefttime: res.data
+              })
+            },
+            fail: function (res) {
+              // fail
+            },
+            complete: function (res) {
+              // complete
+            }
+          })
+        }
+        else if (res.data == null) {
+          app.globalData.schoolno = null;
+          app.globalData.sitno = null;
+        }
+      },
+      fail: function (res) {
+        // fail
+      },
+      complete: function (res) {
+        // complete
+      }
+    })
+
     wx.request({ //网络请求测试函数
       url: 'https://www.cugbyouz.cn/test.php',//此处填写你后台请求地址
       method: 'GET',
@@ -90,7 +159,6 @@ Page({
         // complete
       }
     })
-
     app.globalData.schoolno = null;
   },
 

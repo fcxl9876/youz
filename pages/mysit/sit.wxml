@@ -19,11 +19,12 @@
   暂无使用中的座位
 </view>
 <w:br/>
-<view class="aa" wx:if="{{ schoolno==1 }}">
+<view class="aa" wx:if="{{ sitno!=0 && sitno!=null }}">
   中国地质大学（北京）
 </view>
 <view class="aa" wx:else >
-  请点击开始找座
+  请点击底部的开始找座<wx:br/>
+  <button class="btn" open-type="contact">座位被释放？联系客服</button>
 </view>
 <view class="b" wx:if="{{ sitno!=0 && sitno!=null }}" >
   座位状态：
@@ -58,7 +59,7 @@
 <view wx:else >
 </view>
 <view  wx:if="{{ sitno!=0 && sitstate == 1 }}">
-  <button class="btn" disabled='true'>与ta聊天</button>
+  <button class="btn" open-type="contact">联系客服</button>
 </view>
 <view wx:else >
 </view>

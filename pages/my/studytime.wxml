@@ -1,0 +1,7 @@
+<!--pages/my/studytime.wxml-->
+<view>
+  你的累计学习时间为:小时<wx:br/>
+  <view class="a">
+    不足一小时部分不计
+  </view>
+</view>
