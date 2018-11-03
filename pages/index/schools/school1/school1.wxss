@@ -37,6 +37,9 @@
   width: 20px;
   height: 20px;
 }
+.sit1{
+  position: fixed;
+}
 .sitl1{
   width: 20px;
   height: 20px;
@@ -54,4 +57,70 @@
   width: 25px;
   height: 45px;
   left: 25px;
+}
+.sit2{
+  position: fixed;
+  left: 80px;
+}
+.sitl2{
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+}
+.sitr2{
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-90deg);
+  left: 135px;
+}
+.table2{
+  position: fixed;
+  width: 25px;
+  height: 45px;
+  left: 105px;
+}
+.sit3{
+  position: fixed;
+  left: 160px;
+}
+.sitl3{
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+}
+.sitr3{
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-90deg);
+  left: 215px;
+}
+.table3{
+  position: fixed;
+  width: 25px;
+  height: 45px;
+  left: 185px;
+}
+.sit4{
+  position: fixed;
+  left: 240px;
+}
+.sitl4{
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+}
+.sitr4{
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-90deg);
+  left: 295px;
+}
+.table4{
+  position: fixed;
+  width: 25px;
+  height: 45px;
+  left: 265px;
 }

@@ -4,7 +4,7 @@
 
 <view class="head">
   <view class="tt">中国地质大学（北京）</view>
-  <view class="ttt"><w:br/>科研楼一楼大厅</view>
+  <view class="ttt"><w:br/>科研楼一楼西区中部</view>
 </view>
 
 <view class="a1">
@@ -14,6 +14,7 @@
 </view>
 
 <view class="a2">
+<view class="sit1">
 <view>
   <image class="sitl1" src="{{ colorsit1 }}" bindtap="gotosit1"></image>
   <image class="table1" src="../../../../images/table.jpg"></image>
@@ -33,3 +34,68 @@
   <image class="sitr1" src="{{ colorsit8 }}" bindtap="gotosit8"></image>
 </view>
 </view>
+
+<view class="sit2">
+<view>
+  <image class="sitl2" src="{{ colorsit1 }}" bindtap="gotosit1"></image>
+  <image class="table2" src="../../../../images/table.jpg"></image>
+  <image class="sitr2" src="{{ colorsit5 }}" bindtap="gotosit5"></image>
+</view>
+<view>
+  <image class="sitl2" src="{{ colorsit2 }}" bindtap="gotosit2"></image>
+  <image class="sitr2" src="{{ colorsit6 }}" bindtap="gotosit6"></image>
+</view>
+<view>
+  <image class="sitl2" src="{{ colorsit3 }}" bindtap="gotosit3"></image>
+  <image class="table2" src="../../../../images/table.jpg"></image>
+  <image class="sitr2" src="{{ colorsit7 }}" bindtap="gotosit7"></image>
+</view>
+<view>
+  <image class="sitl2" src="{{ colorsit4 }}" bindtap="gotosit4"></image>
+  <image class="sitr2" src="{{ colorsit8 }}" bindtap="gotosit8"></image>
+</view>
+</view>
+
+<view class="sit3">
+<view>
+  <image class="sitl3" src="{{ colorsit1 }}" bindtap="gotosit1"></image>
+  <image class="table3" src="../../../../images/table.jpg"></image>
+  <image class="sitr3" src="{{ colorsit5 }}" bindtap="gotosit5"></image>
+</view>
+<view>
+  <image class="sitl3" src="{{ colorsit2 }}" bindtap="gotosit2"></image>
+  <image class="sitr3" src="{{ colorsit6 }}" bindtap="gotosit6"></image>
+</view>
+<view>
+  <image class="sitl3" src="{{ colorsit3 }}" bindtap="gotosit3"></image>
+  <image class="table3" src="../../../../images/table.jpg"></image>
+  <image class="sitr3" src="{{ colorsit7 }}" bindtap="gotosit7"></image>
+</view>
+<view>
+  <image class="sitl3" src="{{ colorsit4 }}" bindtap="gotosit4"></image>
+  <image class="sitr3" src="{{ colorsit8 }}" bindtap="gotosit8"></image>
+</view>
+</view>
+
+<view class="sit4">
+<view>
+  <image class="sitl4" src="{{ colorsit1 }}" bindtap="gotosit1"></image>
+  <image class="table4" src="../../../../images/table.jpg"></image>
+  <image class="sitr4" src="{{ colorsit5 }}" bindtap="gotosit5"></image>
+</view>
+<view>
+  <image class="sitl4" src="{{ colorsit2 }}" bindtap="gotosit2"></image>
+  <image class="sitr4" src="{{ colorsit6 }}" bindtap="gotosit6"></image>
+</view>
+<view>
+  <image class="sitl4" src="{{ colorsit3 }}" bindtap="gotosit3"></image>
+  <image class="table4" src="../../../../images/table.jpg"></image>
+  <image class="sitr4" src="{{ colorsit7 }}" bindtap="gotosit7"></image>
+</view>
+<view>
+  <image class="sitl4" src="{{ colorsit4 }}" bindtap="gotosit4"></image>
+  <image class="sitr4" src="{{ colorsit8 }}" bindtap="gotosit8"></image>
+</view>
+</view>
+</view>
+

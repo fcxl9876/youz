@@ -52,24 +52,24 @@ Page({
       }
     });
 
-    wx.getSystemInfo({ // 系统API,获取系统信息，比如设备宽高
-      success: (res) => {
-        this.setData({
-          //定义控件数组，可以在data对象初始化为[],也可以不初始化，取决于是否需要更好的阅读
-          controls: [{
-            id: 1, // 给控件定义唯一id
-            iconPath: '/images/map.png', // 控件图标
-            position: { // 控件位置
-              left: res.windowWidth / 2 + 60, // 单位px
-              top: res.windowHeight / 2 - 60, // 根据设备高度设置top值，可以做到在不同设备上效果一致
-              width: 30, // 控件宽度/px
-              height: 30 // 控件高度/px
-            },
-            clickable: true // 是否可点击，默认为true,可点击
-          }]
-        })
-      }
-    });
+    // wx.getSystemInfo({ // 系统API,获取系统信息，比如设备宽高
+    //   success: (res) => {
+    //     this.setData({
+    //       //定义控件数组，可以在data对象初始化为[],也可以不初始化，取决于是否需要更好的阅读
+    //       controls: [{
+    //         id: 1, // 给控件定义唯一id
+    //         iconPath: '/images/map.png', // 控件图标
+    //         position: { // 控件位置
+    //           left: res.windowWidth / 2 + 60, // 单位px
+    //           top: res.windowHeight / 2 - 60, // 根据设备高度设置top值，可以做到在不同设备上效果一致
+    //           width: 30, // 控件宽度/px
+    //           height: 30 // 控件高度/px
+    //         },
+    //         clickable: true // 是否可点击，默认为true,可点击
+    //       }]
+    //     })
+    //   }
+    // });
 
     wx.request({
       url: 'https://www.cugbyouz.cn/check.php',
@@ -162,17 +162,17 @@ Page({
     app.globalData.schoolno = null;
   },
 
-  bindcontroltap: function (e) {
-    // 判断点击的是哪个控件 e.controlId代表控件的id，在页面加载时的第3步设置的id
-    switch (e.controlId) {
-      // 点击选择教室控件，跳转到选择教室页
-      case 1: wx.navigateTo({
-        url: 'schools/school1/school1'
-      });
-        break;
-      default: break;
-    }
-  },
+  // bindcontroltap: function (e) {
+  //   // 判断点击的是哪个控件 e.controlId代表控件的id，在页面加载时的第3步设置的id
+  //   switch (e.controlId) {
+  //     // 点击选择教室控件，跳转到选择教室页
+  //     case 1: wx.navigateTo({
+  //       url: 'schools/school1/school1'
+  //     });
+  //       break;
+  //     default: break;
+  //   }
+  // },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
